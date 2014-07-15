@@ -1,0 +1,5 @@
+name: Uppercut
+version: 0.1-BETA
+author: TeddyTheTeddy
+
+main: uk.co.teddytheteddy.bukkit.minis.uppercut.Main
