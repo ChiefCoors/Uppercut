@@ -1,5 +1,16 @@
 name: Uppercut
-version: 0.1-BETA
+version: 0.2-BETA
 author: TeddyTheTeddy
 
 main: uk.co.teddytheteddy.bukkit.minis.uppercut.Main
+
+commands:
+  uppercut:
+    description: Uppercuts the specified player
+    usage: /Uppercut <Player>
+
+permissions:
+  uppercut.do:
+    default: op
+  uppercut.fly:
+    default: true
