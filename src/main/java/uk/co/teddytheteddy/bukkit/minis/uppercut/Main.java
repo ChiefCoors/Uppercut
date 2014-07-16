@@ -46,6 +46,7 @@ public class Main extends JavaPlugin implements CommandExecutor, Listener {
                         Bukkit.broadcastMessage(ChatColor.YELLOW + "The player " + ChatColor.GOLD + sender.getName() + ChatColor.YELLOW + " has upercut " + ChatColor.GRAY + p.getName() + ChatColor.YELLOW + "!");
                         if(p.hasPermission("uppercut.fly")){
                             p.setVelocity(new Vector(random.nextInt(2)+0.5, random.nextInt(3)+2, random.nextInt(2)+0.5));
+                            noFall.add(p.getUniqueId());
                         }
 
                         p.getWorld().createExplosion(p.getLocation().getX(), p.getLocation().getY(), p.getLocation().getZ(), 0, false, false);
